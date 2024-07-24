@@ -91,18 +91,3 @@ const NoteState = (props) => {
 }
 
 export default NoteState
-// const s1 = {
-//     "name": "Ace",
-//     "class": "5b"
-// }
-// const [state, setState] = useState(s1)
-// const update=()=>{
-//     setTimeout(()=>{
-//         setState({
-//             "name": "luffy",
-//             "class": "1c"
-//         })
-//     }, 2000)
-// }
-
-//<NoteContext.Provider value={{state, update}}>
