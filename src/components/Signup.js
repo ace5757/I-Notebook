@@ -6,7 +6,7 @@ const Signup = (props) => {
     let navigate = useNavigate()
     const handleSubmit=async(e)=>{
         e.preventDefault()
-        const response = await fetch('http://localhost:3003/v1/auth/createUser', {
+        const response = await fetch('https://deploy-i-notebook-backend.vercel.app/v1/auth/createUser', {
             method: 'POST',
             headers:{
                 "Content-Type": 'application/json'
@@ -32,7 +32,7 @@ const Signup = (props) => {
     const onChange = (e) => {
         setCredential({ ...credential, [e.target.name]: e.target.value })
     }
-    return (
+    return (    
         <div className='container my-3'>
             <h2>Sign-in to access to i-notebook</h2>
             <form onSubmit={handleSubmit}>
